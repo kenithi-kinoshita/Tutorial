@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "044238F9-BA4C-44BA-96B1-95C282DC17BC",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "language" : "ja",
+    "region" : "JP",
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Landmarks.xcodeproj",
+      "identifier" : "E4D01D9D26B551C2002D5227",
+      "name" : "Landmarks"
+    }
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}
