@@ -48,7 +48,9 @@
 
 /* Begin PBXFileReference section */
 		E412950A26B8492100EB1A0C /* Landmarks.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = Landmarks.app; sourceTree = "<group>"; };
-		E4D01D9E26B551C2002D5227 /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Landmarks.app; path = "/Users/k_k_mac_mini_m1/Swiftapp/Tutorial/Landmarks/build/Debug-iphoneos/Landmarks.app"; sourceTree = "<absolute>"; };
+		E49AA2C626BB72DA0005634B /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Landmarks.app; path = "/Users/k_k_mac_mini_m1/Swiftapp/Tutorial/Landmarks/build/Debug-iphoneos/Landmarks.app"; sourceTree = "<absolute>"; };
+		E49AA2C726BB72DA0005634B /* Landmarks-Staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Landmarks-Staging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E49AA2C826BB72DA0005634B /* Landmarks-Release.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Landmarks-Release.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D01DA126B551C2002D5227 /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
 		E4D01DA326B551C2002D5227 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E4D01DA526B551C3002D5227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,8 +64,6 @@
 		E4D01DC026B7F896002D5227 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		E4D01DC226B7FE08002D5227 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		E4D01DC426B80812002D5227 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
-		E4D01DD926B82FC9002D5227 /* Landmarks-Staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Landmarks-Staging.app"; path = "/Users/k_k_mac_mini_m1/Swiftapp/Tutorial/Landmarks/build/Debug-iphoneos/Landmarks-Staging.app"; sourceTree = "<absolute>"; };
-		E4D01DEE26B82FE7002D5227 /* Landmarks-Release.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Landmarks-Release.app"; path = "/Users/k_k_mac_mini_m1/Swiftapp/Tutorial/Landmarks/build/Debug-iphoneos/Landmarks-Release.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +95,9 @@
 			isa = PBXGroup;
 			children = (
 				E4D01DA026B551C2002D5227 /* Landmarks */,
+				E412950A26B8492100EB1A0C /* Landmarks.app */,
+				E49AA2C726BB72DA0005634B /* Landmarks-Staging.app */,
+				E49AA2C826BB72DA0005634B /* Landmarks-Release.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				E4D01DA826B551C3002D5227 /* Preview Assets.xcassets */,
-				E412950A26B8492100EB1A0C /* Landmarks.app */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -168,7 +170,7 @@
 			);
 			name = Landmarks;
 			productName = Landmarks;
-			productReference = E4D01D9E26B551C2002D5227 /* Landmarks.app */;
+			productReference = E49AA2C626BB72DA0005634B /* Landmarks.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E4D01DC626B82FC9002D5227 /* Landmarks-Staging */ = {
@@ -185,7 +187,7 @@
 			);
 			name = "Landmarks-Staging";
 			productName = Landmarks;
-			productReference = E4D01DD926B82FC9002D5227 /* Landmarks-Staging.app */;
+			productReference = E49AA2C726BB72DA0005634B /* Landmarks-Staging.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E4D01DDB26B82FE7002D5227 /* Landmarks-Release */ = {
@@ -202,7 +204,7 @@
 			);
 			name = "Landmarks-Release";
 			productName = Landmarks;
-			productReference = E4D01DEE26B82FE7002D5227 /* Landmarks-Release.app */;
+			productReference = E49AA2C826BB72DA0005634B /* Landmarks-Release.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
