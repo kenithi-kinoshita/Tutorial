@@ -13,10 +13,20 @@ struct CategoryHome: View {
     var body: some View {
         NavigationView {
             List {
+                modelData.features[0].image/*Faturedの下部に大きく画像を表示*/
+                    .resizable()
+                    .scaledToFill()
+                    .frame(height: 200)
+                    .clipped()
+                    .listRowInsets(EdgeInsets())/*Top画像の横幅をフルスクリーン*/
+                
+                //サムネイル画像を並べて表示
                 ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
-                    Text(key)
+                    CategoryRow(categoryName: key, items: modelData.categories[key]!)
                 }
+                .listRowInsets(EdgeInsets())/*Topと同じくエッジインセットをゼロに設定して拡張*/
             }
+            //タイトル表示
             .navigationTitle("Featured")
         }
     }
