@@ -56,6 +56,7 @@
 		E4E177AB26BD33EE00F25154 /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E177A726BD33EE00F25154 /* HikeGraph.swift */; };
 		E4E177AC26BD33EE00F25154 /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E177A826BD33EE00F25154 /* HikeDetail.swift */; };
 		E4E177AD26BD33EE00F25154 /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E177A926BD33EE00F25154 /* HikeView.swift */; };
+		E4E177AF26BD3D9500F25154 /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E177AE26BD3D9500F25154 /* CategoryHome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		E4E177A726BD33EE00F25154 /* HikeGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
 		E4E177A826BD33EE00F25154 /* HikeDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
 		E4E177A926BD33EE00F25154 /* HikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
+		E4E177AE26BD3D9500F25154 /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				E4BA249426BBEDC4008A0C43 /* Helpers */,
 				E4BA249326BBEDBB008A0C43 /* Landmarks */,
 				E4E177A026BD2D7C00F25154 /* Badges */,
+				E4E177AE26BD3D9500F25154 /* CategoryHome.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4D01DA426B551C2002D5227 /* ContentView.swift in Sources */,
+				E4E177AF26BD3D9500F25154 /* CategoryHome.swift in Sources */,
 				E4E177AB26BD33EE00F25154 /* HikeGraph.swift in Sources */,
 				E4E1779F26BD2ACB00F25154 /* Badge.swift in Sources */,
 				E4D01DB526B559C5002D5227 /* MapView.swift in Sources */,
