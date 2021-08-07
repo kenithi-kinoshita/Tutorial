@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CategoryHome: View {
     @EnvironmentObject var modelData: ModelData
+    @State private var showingProfile = false/*右上のプロフィールアイコン*/
     
     var body: some View {
         NavigationView {
@@ -28,6 +29,18 @@ struct CategoryHome: View {
             }
             //タイトル表示
             .navigationTitle("Featured")
+            //右上のプロフィールアイコン
+            .toolbar {
+                Button(action: { showingProfile.toggle() }) {
+                    Image(systemName: "person.crop.circle")
+                        .accessibilityLabel("User Profile")
+                }
+            }
+            .sheet(isPresented: $showingProfile) {
+                ProfileHost()
+                    .environmentObject(modelData)
+            }
+            
         }
     }
 }
