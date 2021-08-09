@@ -29,6 +29,11 @@ struct Landmark: Hashable, Codable, Identifiable {
     var image: Image {
         Image(imageName)
     }
+    
+    //Landmark特徴画像が存在する場合は、それを返すプロパティ
+    var featureImage: Image? {
+        isFavorite ? Image(imageName + "_feature") : nil
+    }
 
     private var coordinates: Coordinates
     var locationCoordinate: CLLocationCoordinate2D {
