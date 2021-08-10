@@ -5,7 +5,6 @@
 //  Created by 木下健一 on 2021/08/09.
 //
 
-
 import SwiftUI
 import UIKit
 
@@ -66,17 +65,17 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
             }
             return controllers[index + 1]
         }
-        
+
         func pageViewController(
-                    _ pageViewController: UIPageViewController,
-                    didFinishAnimating finished: Bool,
-                    previousViewControllers: [UIViewController],
-                    transitionCompleted completed: Bool) {
-                    if completed,
-                       let visibleViewController = pageViewController.viewControllers?.first,
-                       let index = controllers.firstIndex(of: visibleViewController) {
-                        parent.currentPage = index
-                    }
+            _ pageViewController: UIPageViewController,
+            didFinishAnimating finished: Bool,
+            previousViewControllers: [UIViewController],
+            transitionCompleted completed: Bool) {
+            if completed,
+               let visibleViewController = pageViewController.viewControllers?.first,
+               let index = controllers.firstIndex(of: visibleViewController) {
+                parent.currentPage = index
+            }
         }
     }
 }
