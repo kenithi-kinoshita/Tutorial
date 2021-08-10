@@ -9,22 +9,24 @@ import SwiftUI
 
 struct CategoryHome: View {
     @EnvironmentObject var modelData: ModelData
-    @State private var showingProfile = false
-
+    @State private var showingProfile = false/*右上のプロフィールアイコン*/
+    
     var body: some View {
         NavigationView {
             List {
-                PageView(pages: modelData.features.map { FeatureCard(landmark: $0) })
+                PageView(pages: modelData.features.map { FeatureCard(landmark: $0)})
                     .aspectRatio(3 / 2, contentMode: .fit)
-                    .listRowInsets(EdgeInsets())
-
+                    .listRowInsets(EdgeInsets())/*Top画像の横幅をフルスクリーン*/
+                
+                //サムネイル画像を並べて表示
                 ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
                     CategoryRow(categoryName: key, items: modelData.categories[key]!)
                 }
-                .listRowInsets(EdgeInsets())
+                .listRowInsets(EdgeInsets())/*Topと同じくエッジインセットをゼロに設定して拡張*/
             }
-            .listStyle(InsetListStyle())
+            //タイトル表示
             .navigationTitle("Featured")
+            //右上のプロフィールアイコン
             .toolbar {
                 Button(action: { showingProfile.toggle() }) {
                     Image(systemName: "person.crop.circle")
@@ -35,6 +37,7 @@ struct CategoryHome: View {
                 ProfileHost()
                     .environmentObject(modelData)
             }
+            
         }
     }
 }
