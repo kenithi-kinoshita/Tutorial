@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4A0DD5526C2485E00264FC4 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A0DD5426C2485E00264FC4 /* PageControl.swift */; };
 		E4BA249126BBEC57008A0C43 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BA249026BBEC57008A0C43 /* FavoriteButton.swift */; };
 		E4D01DA226B551C2002D5227 /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D01DA126B551C2002D5227 /* LandmarksApp.swift */; };
 		E4D01DA426B551C2002D5227 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D01DA326B551C2002D5227 /* ContentView.swift */; };
@@ -73,6 +74,7 @@
 		E412950A26B8492100EB1A0C /* Landmarks.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = Landmarks.app; sourceTree = "<group>"; };
 		E49AA2C726BB72DA0005634B /* Landmarks-Staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Landmarks-Staging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49AA2C826BB72DA0005634B /* Landmarks-Release.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Landmarks-Release.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A0DD5426C2485E00264FC4 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		E4BA248F26BBEA80008A0C43 /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4BA249026BBEC57008A0C43 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		E4D01DA126B551C2002D5227 /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 				E4E177C326C1250800F25154 /* PageViewController.swift */,
 				E4E177C526C1286700F25154 /* FeatureCard.swift */,
 				E4E177C826C12C4200F25154 /* PageView.swift */,
+				E4A0DD5426C2485E00264FC4 /* PageControl.swift */,
 			);
 			path = PageView;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				E4D01DB526B559C5002D5227 /* MapView.swift in Sources */,
 				E4E177AA26BD33EE00F25154 /* GraphCapsule.swift in Sources */,
 				E4D01DA226B551C2002D5227 /* LandmarksApp.swift in Sources */,
+				E4A0DD5526C2485E00264FC4 /* PageControl.swift in Sources */,
 				E4BA249126BBEC57008A0C43 /* FavoriteButton.swift in Sources */,
 				E4E177B326BD493600F25154 /* CategoryItem.swift in Sources */,
 				E4E177AC26BD33EE00F25154 /* HikeDetail.swift in Sources */,

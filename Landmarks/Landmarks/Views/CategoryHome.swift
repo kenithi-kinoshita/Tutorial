@@ -14,11 +14,8 @@ struct CategoryHome: View {
     var body: some View {
         NavigationView {
             List {
-                modelData.features[0].image/*Faturedの下部に大きく画像を表示*/
-                    .resizable()
-                    .scaledToFill()
-                    .frame(height: 200)
-                    .clipped()
+                PageView(pages: modelData.features.map { FeatureCard(landmark: $0)})
+                    .aspectRatio(3 / 2, contentMode: .fit)
                     .listRowInsets(EdgeInsets())/*Top画像の横幅をフルスクリーン*/
                 
                 //サムネイル画像を並べて表示
