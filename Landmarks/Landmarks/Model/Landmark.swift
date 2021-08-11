@@ -1,9 +1,9 @@
-//
-//  Landmark.swift
-//  Landmarks
-//
-//  Created by 木下健一 on 2021/08/02.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A representation of a single landmark.
+*/
 
 import Foundation
 import SwiftUI
@@ -17,7 +17,7 @@ struct Landmark: Hashable, Codable, Identifiable {
     var description: String
     var isFavorite: Bool
     var isFeatured: Bool
-    
+
     var category: Category
     enum Category: String, CaseIterable, Codable {
         case lakes = "Lakes"
@@ -29,10 +29,8 @@ struct Landmark: Hashable, Codable, Identifiable {
     var image: Image {
         Image(imageName)
     }
-    
-    //Landmark特徴画像が存在する場合は、それを返すプロパティ
     var featureImage: Image? {
-        isFavorite ? Image(imageName + "_feature") : nil
+        isFeatured ? Image(imageName + "_feature") : nil
     }
 
     private var coordinates: Coordinates

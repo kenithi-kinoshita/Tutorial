@@ -1,9 +1,9 @@
-//
-//  PageViewController.swift
-//  Landmarks
-//
-//  Created by 木下健一 on 2021/08/09.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A view that wraps a UIPageViewController.
+*/
 
 import SwiftUI
 import UIKit
@@ -42,8 +42,7 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
 
         func pageViewController(
             _ pageViewController: UIPageViewController,
-            viewControllerBefore viewController: UIViewController) -> UIViewController?
-        {
+            viewControllerBefore viewController: UIViewController) -> UIViewController? {
             guard let index = controllers.firstIndex(of: viewController) else {
                 return nil
             }
@@ -55,8 +54,7 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
 
         func pageViewController(
             _ pageViewController: UIPageViewController,
-            viewControllerAfter viewController: UIViewController) -> UIViewController?
-        {
+            viewControllerAfter viewController: UIViewController) -> UIViewController? {
             guard let index = controllers.firstIndex(of: viewController) else {
                 return nil
             }

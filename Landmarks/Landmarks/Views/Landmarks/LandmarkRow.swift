@@ -1,9 +1,9 @@
-//
-//  LandmarkRow.swift
-//  Landmarks
-//
-//  Created by 木下健一 on 2021/08/02.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A single row to be displayed in a list of landmarks.
+*/
 
 import SwiftUI
 
@@ -16,16 +16,24 @@ struct LandmarkRow: View {
                 .resizable()
                 .frame(width: 50, height: 50)
                 .cornerRadius(5)
-            Text(landmark.name)
+            VStack(alignment: .leading) {
+                Text(landmark.name)
+                    .bold()
+                #if !os(watchOS)
+                Text(landmark.park)
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                #endif
+            }
 
             Spacer()
 
             if landmark.isFavorite {
                 Image(systemName: "star.fill")
-                    .imageScale(.medium)
                     .foregroundColor(.yellow)
             }
         }
+        .padding(.vertical, 4)
     }
 }
 
@@ -39,5 +47,4 @@ struct LandmarkRow_Previews: PreviewProvider {
         }
         .previewLayout(.fixed(width: 300, height: 70))
     }
-
 }

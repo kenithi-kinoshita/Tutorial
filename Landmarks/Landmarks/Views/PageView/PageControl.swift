@@ -1,9 +1,9 @@
-//
-//  PageControl.swift
-//  Landmarks
-//
-//  Created by 木下健一 on 2021/08/10.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A view wrapping a UIPageControl.
+*/
 
 import SwiftUI
 import UIKit
@@ -44,4 +44,3 @@ struct PageControl: UIViewRepresentable {
         }
     }
 }
-    

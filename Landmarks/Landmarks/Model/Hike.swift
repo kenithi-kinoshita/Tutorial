@@ -1,9 +1,9 @@
-//
-//  Hike.swift
-//  Landmarks
-//
-//  Created by 木下健一 on 2021/08/06.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A representation of a hike.
+*/
 
 import Foundation
 

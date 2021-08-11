@@ -1,9 +1,9 @@
-//
-//  FavoriteButton.swift
-//  Landmarks
-//
-//  Created by 木下健一 on 2021/08/05.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A button that acts as a favorites indicator.
+*/
 
 import SwiftUI
 

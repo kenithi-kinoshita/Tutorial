@@ -1,12 +1,11 @@
-//
-//  ComplicationController.swift
-//  WatchLandmarks Extension
-//
-//  Created by 木下健一 on 2021/08/10.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A complication for the watchOS app.
+*/
 
 import ClockKit
-
 
 class ComplicationController: NSObject, CLKComplicationDataSource {
     
@@ -44,7 +43,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         // Call the handler with the current timeline entry
         handler(nil)
     }
-    
+
     func getTimelineEntries(for complication: CLKComplication, after date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
         // Call the handler with the timeline entries after the given date
         handler(nil)

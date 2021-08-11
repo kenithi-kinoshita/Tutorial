@@ -1,10 +1,9 @@
-//
-//  FeatureCard.swift
-//  Landmarks
-//
-//  Created by 木下健一 on 2021/08/09.
-//
-/*ランドマークの特徴画像を表示する*/
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A view that shows a featured landmark.
+*/
 
 import SwiftUI
 
@@ -15,11 +14,10 @@ struct FeatureCard: View {
         landmark.featureImage?
             .resizable()
             .aspectRatio(3 / 2, contentMode: .fit)
-            //画像にオーバーレイ
             .overlay(TextOverlay(landmark: landmark))
     }
 }
-//ランドマークに関するテキスト情報を画像にオーバーレイ
+
 struct TextOverlay: View {
     var landmark: Landmark
 

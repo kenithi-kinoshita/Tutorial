@@ -1,9 +1,9 @@
-//
-//  LandmarksApp.swift
-//  Landmarks
-//
-//  Created by 木下健一 on 2021/07/31.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+The top-level definition of the Landmarks app.
+*/
 
 import SwiftUI
 
@@ -12,13 +12,28 @@ struct LandmarksApp: App {
     @StateObject private var modelData = ModelData()
 
     var body: some Scene {
-        WindowGroup {
+        let mainWindow = WindowGroup {
             ContentView()
                 .environmentObject(modelData)
         }
-        
+
+        #if os(macOS)
+        mainWindow
+            .commands {
+                LandmarkCommands()
+            }
+        #else
+        mainWindow
+        #endif
+
         #if os(watchOS)
         WKNotificationScene(controller: NotificationController.self, category: "LandmarkNear")
+        #endif
+
+        #if os(macOS)
+        Settings {
+            LandmarkSettings()
+        }
         #endif
     }
 }

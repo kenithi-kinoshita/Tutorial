@@ -1,20 +1,20 @@
-//
-//  ContentView.swift
-//  Landmarks
-//
-//  Created by 木下健一 on 2021/07/31.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A view showing featured landmarks above a list of all of the landmarks.
+*/
 
 import SwiftUI
 
 struct ContentView: View {
     @State private var selection: Tab = .featured
-    
+
     enum Tab {
         case featured
         case list
     }
-    
+
     var body: some View {
         TabView(selection: $selection) {
             CategoryHome()
@@ -22,7 +22,7 @@ struct ContentView: View {
                     Label("Featured", systemImage: "star")
                 }
                 .tag(Tab.featured)
-        
+
             LandmarkList()
                 .tabItem {
                     Label("List", systemImage: "list.bullet")
@@ -34,9 +34,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            ContentView()
-                .environmentObject(ModelData())
-        }
+        ContentView()
+            .environmentObject(ModelData())
     }
 }

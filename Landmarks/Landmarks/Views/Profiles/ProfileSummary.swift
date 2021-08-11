@@ -1,33 +1,33 @@
-//
-//  ProfileSummary.swift
-//  Landmarks
-//
-//  Created by 木下健一 on 2021/08/07.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A view that summarizes a profile.
+*/
 
 import SwiftUI
 
 struct ProfileSummary: View {
     @EnvironmentObject var modelData: ModelData
     var profile: Profile
-    
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 10) {
                 Text(profile.username)
                     .bold()
                     .font(.title)
-                
-                Text("Notisfications: \(profile.prefersNotifications ? "On": "Off")")
+
+                Text("Notifications: \(profile.prefersNotifications ? "On": "Off" )")
                 Text("Seasonal Photos: \(profile.seasonalPhoto.rawValue)")
-                Text("Goal Date: ") + Text(profile.goalData, style: .date)
-                
+                Text("Goal Date: ") + Text(profile.goalDate, style: .date)
+
                 Divider()
-                
+
                 VStack(alignment: .leading) {
                     Text("Completed Badges")
                         .font(.headline)
-                    
+
                     ScrollView(.horizontal) {
                         HStack {
                             HikeBadge(name: "First Hike")
@@ -40,16 +40,17 @@ struct ProfileSummary: View {
                         .padding(.bottom)
                     }
                 }
-                
+
                 Divider()
-                
+
                 VStack(alignment: .leading) {
-                    Text("Recent Hike")
+                    Text("Recent Hikes")
                         .font(.headline)
-                    
+
                     HikeView(hike: modelData.hikes[0])
                 }
             }
+            .padding()
         }
     }
 }

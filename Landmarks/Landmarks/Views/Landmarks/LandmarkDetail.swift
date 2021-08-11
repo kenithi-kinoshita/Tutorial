@@ -1,9 +1,9 @@
-//
-//  LandmarkDetail.swift
-//  Landmarks
-//
-//  Created by 木下健一 on 2021/08/02.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A view showing the details for a landmark.
+*/
 
 import SwiftUI
 
@@ -29,7 +29,6 @@ struct LandmarkDetail: View {
                 HStack {
                     Text(landmark.name)
                         .font(.title)
-                        .foregroundColor(.primary)
                     FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
                 }
 

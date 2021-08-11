@@ -1,12 +1,8 @@
-//
-//  PageView.swift
-//  Landmarks
-//
-//  Created by 木下健一 on 2021/08/09.
-//
 /*
- タイプを更新して子ビューとして宣言
- Xcordはタイプを推測できないためプレビューは失敗する
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A view for bridging a UIPageViewController.
 */
 
 import SwiftUI
